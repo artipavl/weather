@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export async function getImage(q, page) {
-    const get = await axios.get(`https://pixabay.com/api/?q=${q}&page=${page}&key=30745008-d5532b40a5a7d9416df3fd4b0&image_type=photo&orientation=horizontal&per_page=12`);
+export async function getImage(name) {
+    const get = await axios.get(`https://api.weatherapi.com/v1/current.json?key=11de967f0d7848f5b0a123920222711&q=${name}`);
     return get.data
 }
