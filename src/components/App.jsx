@@ -1,5 +1,5 @@
-import { React, Component } from 'react';
-
+import { Component } from 'react';
+// React, 
 
 export class App extends Component {
   state = {
