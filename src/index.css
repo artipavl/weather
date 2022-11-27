@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url("https://gamerwall.pro/uploads/posts/2021-11/1637305523_35-gamerwall-pro-p-oblachnoe-nebo-tekstura-oboi-na-zastavku-36.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serach {
+  border: 1px solid #dadada;
+  height: 50px;
+  padding: 10px 30px;
+}
+
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.firt-box,
+.second-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #4ad2d26c;
+  padding: 20px;
+  width: 360px;
+  height: 320px;
+  border: 2px solid black;
+  border-radius: 39px;
+  margin: auto;
+}
+
+.day-date {
+  margin-top: 10px;
+}
+
+.current-temperature {
+  font-size: 56px;
+}
+.weater-current-temperature {
+  display: flex;
+  gap: 100px;
+}
+
+.weather-temperature {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.low-temperatura,
+.max-temperatura {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.name-t {
+  text-align: center;
+}
+
+.low-m-text,
+.max-t-text {
+  border-radius: 20px;
+}

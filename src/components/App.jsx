@@ -3,21 +3,18 @@ import { Search } from './Search/Search';
 import { WeatherForecast } from './WeatherForecast/WeatherForecast';
 import { WeatherNow } from './WeatherNow/WeatherNow';
 
-
 export class App extends Component {
-  state = {
-    
-  };
-
+  state = {};
 
   render() {
     return (
       <>
-        <Search />
+        <div className="wrapper">
+          <Search />
+        </div>
         <WeatherNow />
         <WeatherForecast />
       </>
-      
     );
   }
 }
