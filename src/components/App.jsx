@@ -49,6 +49,7 @@ export class App extends Component {
         gust_kph: 15.5,
       },
     },
+    weatherFi: '',
   };
 
   onSearch = search => {
@@ -74,9 +75,8 @@ export class App extends Component {
         <Section>
           {this.state.weather && <WeatherNow weather={this.state.weather} />}
         </Section>
-        <Section>
-          <WeatherForecast />
-        </Section>
+      {/* <button type='button' onClick={}>5 day</button> */}
+        <Section>{this.state.weatherFi && <WeatherForecast />}</Section>
       </>
     );
   }
