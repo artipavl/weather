@@ -63,7 +63,7 @@ export const WeatherForecast = () => {
           src="http://cdn.weatherapi.com/weather/64x64/day/113.png"
           alt="img-weather"
         />{' '}
-        <WeatherSpan>temperatura</WeatherSpan>
+        <WeatherSpan>temperatura  </WeatherSpan>
         <WeatherSpan>30</WeatherSpan>
         <WeatherSpan>Влажность </WeatherSpan>
         <WeatherSpan>20</WeatherSpan>
