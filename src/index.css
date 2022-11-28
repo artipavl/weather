@@ -39,7 +39,7 @@ img {
     box-sizing: inherit;
 }
 
-.section {
+.container {
     position: relative;
     width: 365px;
     height: 320px;
