@@ -1,272 +1,262 @@
 /* normalize */
 body {
-    box-sizing: border-box;
-    padding: 0 30px;
+  box-sizing: border-box;
+  padding: 0 30px;
 
-    font-family: Roboto Slab, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 0.03em;
-    /* line-height: calc(20px / 15px); */
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  /* line-height: calc(20px / 15px); */
 
-    background-color: #b1f5f5;
-    color: white;
-
+  background-color: #b1f5f5;
+  color: white;
 }
 
 ul,
 p,
 h1,
 h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .container {
-    position: relative;
-    width: 365px;
-    height: 320px;
+  position: relative;
+  width: 365px;
+ /*  height: 320px; */
 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-    padding: 30px;
-    margin-right: auto;
-    margin-left: auto;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
 
-    border: solid 0px;
-    opacity: 0.8;
-    /* backdrop-filter: blur(4.5px); */
-    border-radius: 40px;
-    background-color: #63C9C9;
+  border: solid 0px;
+  opacity: 0.8;
+  /* backdrop-filter: blur(4.5px); */
+  border-radius: 40px;
+  background-color: #63c9c9;
 }
 
 .list {
-    padding-left: 0;
-    list-style-type: none;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* first row */
 
 .like {
-    position: absolute;
-    top: 42px;
-    right: 30px;
+  position: absolute;
+  top: 42px;
+  right: 30px;
 }
 
 .place {
-    font-weight: 500;
-    font-size: 30px;
+  font-weight: 500;
+  font-size: 30px;
 }
 
 .a-date {
-    font-size: 16px;
-    opacity: 0.8;
-    margin-left: 5px;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-left: 5px;
 }
 
 /* second row */
 .weather-temp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .temperature {
-    font-size: 88px;
-    display: flex;
-    align-items: baseline;
+  font-size: 88px;
+  display: flex;
+  align-items: baseline;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .t-num {
-    font-weight: 600;
-    background-image: linear-gradient(180deg, #FFFFFF 20%, #FFFFFF 20%, #DCDCDC 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  font-weight: 600;
+  background-image: linear-gradient(
+    180deg,
+    #ffffff 20%,
+    #ffffff 20%,
+    #dcdcdc 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .t-icons {
-    font-weight: 700;
-    font-size: 50px;
-    align-self: flex-start;
+  font-weight: 700;
+  font-size: 50px;
+  align-self: flex-start;
 
-    background-image: linear-gradient(180deg, #F5F4F4 15%, #b7b7b7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    grid-row-start: 1;
-    grid-column-start: 2;
+  background-image: linear-gradient(180deg, #f5f4f4 15%, #b7b7b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-row-start: 1;
+  grid-column-start: 2;
 }
 
 .t-cell {
-    font-weight: 500;
-    font-size: 52px;
+  font-weight: 500;
+  font-size: 52px;
 
-    grid-row-start: 1;
-    grid-column-start: 2;
-    margin-left: 8px;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  margin-left: 8px;
 
-    background-image: linear-gradient(180deg, #F5F4F4 30%, #b7b7b7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(180deg, #f5f4f4 30%, #b7b7b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* last row */
 
 .amplitude {
-    display: flex;
-    gap: 32px;
+  display: flex;
+  gap: 32px;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .amplitude-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-color: #43CCCC;
-    /* background-color: rgb(57, 108, 237); */
-    /* opacity: 0.7; */
-    border-radius: 22px;
+  background-color: #43cccc;
+  /* background-color: rgb(57, 108, 237); */
+  /* opacity: 0.7; */
+  border-radius: 22px;
 
-
-    width: 130px;
-    height: 75px;
+  width: 130px;
+  height: 75px;
 }
 
 .amplitude-link {
-    font-size: 22px;
-    color: inherit;
-    text-align: center;
+  font-size: 22px;
+  color: inherit;
+  text-align: center;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
-    background-size: cover;
-    background-image: url("https://gamerwall.pro/uploads/posts/2021-11/1637305523_35-gamerwall-pro-p-oblachnoe-nebo-tekstura-oboi-na-zastavku-36.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url('https://gamerwall.pro/uploads/posts/2021-11/1637305523_35-gamerwall-pro-p-oblachnoe-nebo-tekstura-oboi-na-zastavku-36.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .serach {
-    border: 1px solid #dadada;
-    height: 50px;
-    padding: 10px 30px;
+  border: 1px solid #dadada;
+  height: 50px;
+  padding: 10px 30px;
 }
 
 .weather-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.firt-box,
-.second-box {
-    display: flex;
-    flex-direction: column;
-    background-color: #4ad2d26c;
-    padding: 20px;
-    width: 360px;
-    height: 320px;
-    border: 2px solid black;
-    border-radius: 39px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .day-date {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .current-temperature {
-    font-size: 56px;
+  font-size: 56px;
 }
 
 .weater-current-temperature {
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 100px;
 }
 
 .weather-temperature {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .low-temperatura,
 .max-temperatura {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .name-t {
-    text-align: center;
+  text-align: center;
 }
 
 .low-m-text,
 .max-t-text {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
-.weatherIcon{
-    width: 100px;
-    height: 100px;
+.weatherIcon {
+  width: 100px;
+  height: 100px;
 }

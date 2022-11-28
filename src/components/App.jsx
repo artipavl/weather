@@ -75,8 +75,11 @@ export class App extends Component {
         <Section>
           {this.state.weather && <WeatherNow weather={this.state.weather} />}
         </Section>
-      {/* <button type='button' onClick={}>5 day</button> */}
+        {/* <button type='button' onClick={}>5 day</button> */}
         <Section>{this.state.weatherFi && <WeatherForecast />}</Section>
+        <Section>
+          <WeatherForecast></WeatherForecast>
+        </Section>
       </>
     );
   }

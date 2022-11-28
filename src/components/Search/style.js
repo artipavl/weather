@@ -7,5 +7,11 @@ export const FormSearch = styled.div`
 `;
 
 export const BtnSearch = styled.button`
-width: 100px;
-`
+  cursor: pointer;
+`;
+
+export const BtnSearchSevenDay = styled.button`
+  color: #373b3b;
+  font-size: 10px;
+  cursor: pointer;
+`;
