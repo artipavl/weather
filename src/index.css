@@ -101,6 +101,7 @@ img {
 .weather-temp {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .temperature {
@@ -263,4 +264,9 @@ body {
 .low-m-text,
 .max-t-text {
     border-radius: 20px;
+}
+
+.weatherIcon{
+    width: 100px;
+    height: 100px;
 }
